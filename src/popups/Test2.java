@@ -20,6 +20,8 @@ public class Test2 {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 driver.findElement(By.xpath("//a[text()='4.1.2']")).click();	
 
+
+
 Robot r=new Robot();
 r.keyPress(KeyEvent.VK_CONTROL);
 r.keyPress(KeyEvent.VK_TAB);
