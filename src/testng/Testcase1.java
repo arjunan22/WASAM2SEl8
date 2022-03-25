@@ -43,7 +43,7 @@ public class Testcase1 {
 	SoftAssert a=new SoftAssert();
 	a.assertEquals(actual, expected);
 	
-	//example for softassert
+	
 	SoftAssert a=new SoftAssert();
 	a.assertEquals(title,"yuegcvgddgdhg");
 	
