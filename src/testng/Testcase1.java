@@ -32,26 +32,27 @@ public class Testcase1 {
 	driver.findElement(By.id("pass")).sendKeys("manager");
 	driver.findElement(By.name("login")).click();
 	String title = driver.getTitle();
+	Reporter.log(title,true);
 	
-	//synatx for assert
-	Assert.assertEquals(actual, expected);
+//	//synatx for assert
+//	Assert.assertEquals(actual, expected);
 	
 	//example for assert
-	Assert.assertEquals(title,"qwetryuqirwrewryu");
-	
-	//syntax for softassert
-	SoftAssert a=new SoftAssert();
-	a.assertEquals(actual, expected);
-	
-	
-	SoftAssert a=new SoftAssert();
-	a.assertEquals(title,"yuegcvgddgdhg");
+	Assert.assertEquals(title,"Facebook – log in or sign up");
+//	
+//	//syntax for softassert
+//	SoftAssert a=new SoftAssert();
+//	a.assertEquals(actual, expected);
+//	
+//	
+//	SoftAssert a=new SoftAssert();
+//	a.assertEquals(title,"yuegcvgddgdhg");
 	
 	
 	Reporter.log(title,true);
 	String url = driver.getCurrentUrl();
 	Reporter.log(url,true);
-	a.assertAll();
+	//a.assertAll();
 	
 	}
 	

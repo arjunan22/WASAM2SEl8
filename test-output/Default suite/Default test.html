@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 25 09:49:13 IST 2022</td>
+<td>Started on:</td><td>Sat Mar 26 11:56:24 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12851 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24614 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,20 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testng.Testcase1.tc1()'><b>tc1</b><br>Test class: testng.Testcase1<br/>
-<a href="#Output-1111710616" onClick='toggleBox("Output-1111710616", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1219637204" onClick='toggleBox("Output-1219637204", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1111710616" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1111710616">
+<a href="#Output-1219637204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1219637204">
 Facebook – log in or sign up<br/>
-https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQ4MTgxOTU5LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [yuegcvgddgdhg] but found [Facebook – log in or sign up]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testng.Testcase1.tc1(Testcase1.java:45)
+<td><div><pre>java.lang.AssertionError: expected [Log in to Facebook] but found [Facebook – log in or sign up]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testng.Testcase1.tc1(Testcase1.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,12 +118,14 @@ https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvb
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1111710616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1111710616'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [yuegcvgddgdhg] but found [Facebook – log in or sign up]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testng.Testcase1.tc1(Testcase1.java:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1219637204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1219637204'><pre>java.lang.AssertionError: expected [Log in to Facebook] but found [Facebook – log in or sign up]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at testng.Testcase1.tc1(Testcase1.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,7 +155,7 @@ https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvb
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
+<td>17</td>
 <td>testng.Testcase1@45ca843</td></tr>
 </table><p>
 </body>
